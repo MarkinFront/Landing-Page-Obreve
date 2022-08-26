@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcio's Food</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/page.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="INDEX.html" class="logo"><i class="fas fa-utensils"></i> Marcio's Food</a>
+
+        <nav class="navbar">
+            <a class="active" href="/page.html">Início</a>
+            <a href="/NovaReceita.html">Nova Receita</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" id="search-form">
+        <input type="search" placeholder="Procure aqui..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+    <section class="order" id="order">
+        <h1 class="heading"> NOVA RECEITA </h1>
+
+
+        <form action="">
+            <div>
+                <h1 class="sub-heading">Nova Receita </h1>
+                <h3>(Preencha todos os campos) </h3>
+                <br>
+            </div>
+
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome da Receita</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="Tempo"><strong>Tempo Preparo</strong></label>
+                    <select id="Tempo" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>15 min</option>
+                        <option>30 min</option>
+                        <option>1h</option>
+                        <option>1:30h</option>
+                        <option>2h</option>
+                    </select>
+                </div>
+
+
+
+                <div class="campo">
+                    <label for="nivel"><strong>Nível da Receita</strong></label>
+                    <select id="nivel" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Fácil</option>
+                        <option>Média</option>
+                        <option>Difícil</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="Refeição"><strong>Refeição</strong></label>
+                    <select id="Refeição" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Café da manhã</option>
+                        <option>Lanche</option>
+                        <option>Almoço</option>
+                        <option>Jantar</option>
+                        <option>Ceia</option>
+                    </select>
+                </div>
+
+
+
+            </fieldset>
+
+            <div><input type="file" value="image" accept="image/*" class="btn1"></div>
+            <br>
+            <form action="">
+
+                <div>
+                    <h1 class="sub-heading">Ingrediente </h1>
+                    <h3>(Indcicar No Mínimo 2 Ingredientes) </h3>
+
+                </div>
+                <div id="formone">
+                    <fieldset class="grupo">
+
+                        <div class="campo">
+                            <label for="Quantidade"><strong>Quantidade</strong></label>
+                            <input type="text" name="Quantidade" id="Quantidade" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="unidade"><strong>Unidade</strong></label>
+                            <select id="unidade" required>
+                                <option selected disabled value="">Selecione</option>
+                                <option>Xícara</option>
+                                <option>Copo</option>
+                                <option>ml</option>
+                                <option>gr</option>
+                                <option>Kg</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Ingrediente"><strong>Ingrediente</strong></label>
+                            <select id="Ingrediente" required>
+                                <option selected disabled value="">Selecione</option>
+                                <option>Farinha</option>
+                                <option>Açúcar</option>
+                                <option>Leite</option>
+                                <option>Ovos</option>
+                                <option>Óleo</option>
+                                <option>Manteiga</option>
+                            </select>
+                        </div>
+                        <br>
+
+
+
+                    </fieldset>
+                    <form action="">
+
+                        <fieldset class="grupo">
+
+                            <div class="campo">
+                                <label for="Quantidade1"><strong>Quantidade</strong></label>
+                                <input type="text" name="Quantidade1" id="Quantidade1" required>
+                            </div>
+
+
+                            <div class="campo">
+                                <label for="unidade1"><strong>Unidade</strong></label>
+                                <select id="unidade1" required>
+                                    <option selected disabled value="">Selecione</option>
+                                    <option>Xícara</option>
+                                    <option>Copo</option>
+                                    <option>ml</option>
+                                    <option>gr</option>
+                                    <option>Kg</option>
+                                </select>
+                            </div>
+
+
+                            <div class="campo">
+                                <label for="Ingrediente1"><strong>Ingrediente</strong></label>
+                                <select id="Ingrediente1" required>
+                                    <option selected disabled value="">Selecione</option>
+                                    <option>Farinha</option>
+                                    <option>Açúcar</option>
+                                    <option>Leite</option>
+                                    <option>Ovos</option>
+                                    <option>Óleo</option>
+                                    <option>Manteiga</option>
+                                </select>
+
+
+                            </div>
+                            <br>
+
+
+
+                        </fieldset>
+
+
+
+
+
+                        <div id="formulario2">
+                            <div class="campo1" class="form-group2">
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <button type="button" id="add-campo2" class="btn1"> Adicionar Ingrediente</button>
+                        </div>
+                        <br>
+
+
+
+
+                        <div>
+                            <h1 class="sub-heading">Modo De Preparo </h1>
+                            <h3>(Indicar No Mínimo 1 Passo) </h3>
+                        </div>
+
+
+
+                        <fieldset class="grupo">
+                            <div class="campo" id="formone1">
+                                <label for="passo"><strong>Passo a passo:</strong></label>
+                                <textarea type="text" rows="3" style="width: 26em" id="experiencia" name="passo" name="nome" id="nome" required>
+                </textarea>
+
+                            </div>
+
+
+                        </fieldset>
+
+
+                </div>
+                <div id="formulario">
+                    <div class="campo" class="form-group">
+
+                    </div>
+
+                </div>
+                <div>
+                    <button type="button" id="add-campo" class="btn1"> Adicionar Passo</button>
+                </div>
+                <br>
+
+
+
+                <input type="submit" value="Confirmar" class="btn">
+
+                </form>
+
+    </section>
+
+
+
+    <section class="dishes" id="dishes">
+
+        <h3 class="sub-heading1"> ALMOÇO UPPERCASE </h3>
+        <h1 class="heading"> Melhores do mês </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="ConsultarReceita.html" class="fas fa-eye"></a>
+
+                <img src="images/dish-3.png" alt="">
+                <h3>FRANGO Front END</h3>
+                <h2>PREPARO: 2 HORAS</h2>
+                <div class="stars">
+
+
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <a href="ConsultarReceita.html" class="btn">Consultar Receita</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-2.png" alt="">
+                <h3>DEV NUGGET'S</h3>
+                <h2>PREPARO: 15 MIN</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <a href="#" class="btn">Consultar Receita</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-1.png" alt="">
+                <h3>X-PROGRAM</h3>
+                <h2>PREPARO: 1 HORA</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+
+                <a href="#" class="btn">Consultar Receita</a>
+            </div>
+
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-4.png" alt="">
+                <h3>Pizza .ASP NET</h3>
+                <h2>PREPARO: 1h 30min </h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <a href="#" class="btn">Consultar Receita</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-5.png" alt="">
+                <h3>Rosca MVC</h3>
+                <h2>PREPARO: 30 MIN</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <a href="#" class="btn">Consultar Receita</a>
+            </div>
+    </section>
+
+    </div>
+
+    </section>
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
